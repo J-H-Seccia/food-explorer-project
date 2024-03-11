@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+.sidebar {
+        margin: .5rem;
+    h2 {
+        background-color: $brand-color;
+        color: $text-color-light;
+        padding: .75rem;
+        text-transform: uppercase;
+        margin: 0 auto;
+        
+    }
+    img {
+        border: 2px solid $brand-color;
+    }
+    article {
+        margin: 0 auto;
+        padding: .5rem;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+    #breakfast, #steak {
+        background-color: #E7E7E7;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: .5rem;
+        max-width: 20rem;
+        @media (min-width: 48em) {
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 34rem;
+        }
+    }
+    li {
+        list-style: none;
+        line-height: 2rem;
+    }
+}
