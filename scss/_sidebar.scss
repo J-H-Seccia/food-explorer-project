@@ -19,6 +19,7 @@
         display: flex;
         gap: .5rem;
         align-items: center;
+        background-color: $text-color-light;
         
     }
     p {
@@ -27,6 +28,11 @@
     }
     #breakfast, #steak {
         background-color: #E7E7E7;
+    }
+
+    .cuisines-wrapper {
+        background-color: $text-color-light;
+        width: 100%;
     }
     ul {
         display: grid;

@@ -430,6 +430,7 @@ nav {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  background-color: #ffffff;
 }
 .sidebar p {
   text-transform: uppercase;
@@ -437,6 +438,10 @@ nav {
 }
 .sidebar #breakfast, .sidebar #steak {
   background-color: #E7E7E7;
+}
+.sidebar .cuisines-wrapper {
+  background-color: #ffffff;
+  width: 100%;
 }
 .sidebar ul {
   display: grid;
@@ -454,6 +459,12 @@ nav {
 .sidebar li {
   list-style: none;
   line-height: 2rem;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  height: 100vh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
