@@ -467,4 +467,12 @@ body {
   width: 100%;
 }
 
+footer {
+  background-color: #0C6599;
+  margin: 0 auto;
+  padding: 0.1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

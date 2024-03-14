@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $brand-color;
+    margin: 0 auto;
+    padding: .1rem;
+    color: $text-color-light;
+    text-align: center;
+    
+}
