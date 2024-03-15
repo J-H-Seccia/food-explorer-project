@@ -414,6 +414,11 @@ nav {
 .sidebar {
   margin: 0.5rem;
 }
+@media (min-width: 50em) {
+  .sidebar {
+    width: 15rem;
+  }
+}
 .sidebar h2 {
   background-color: #0C6599;
   color: #ffffff;
@@ -454,6 +459,11 @@ nav {
   .sidebar ul {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 34rem;
+  }
+}
+@media (min-width: 50em) {
+  .sidebar ul {
+    display: inline-block;
   }
 }
 .sidebar li {
