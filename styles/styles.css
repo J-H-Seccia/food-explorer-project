@@ -485,4 +485,76 @@ footer {
   text-align: center;
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+}
+header picture {
+  padding-left: 0.5rem;
+}
+header button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+header input {
+  width: 100%;
+  background-color: #E7E7E7;
+  padding: 12px;
+}
+header nav {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #0C6599;
+}
+header .search {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+header .search img {
+  position: absolute;
+  right: 8px;
+  top: 25%;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header ul li {
+  background-color: #0C6599;
+  border-top: 1px solid #000000;
+}
+header ul a {
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+header ul a:hover {
+  color: #0C6599;
+  background-color: #ffffff;
+}
+header .icons {
+  padding: 12px;
+}
+header .icons svg {
+  height: 30px;
+  width: 30px;
+  fill: #0C6599;
+  margin: 0 8px;
+}
+
 /*# sourceMappingURL=styles.css.map */

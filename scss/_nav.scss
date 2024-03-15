@@ -1,0 +1,73 @@
+@use 'variables' as *;
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $text-color-light;
+    padding: .5rem 0;
+    picture {
+        padding-left: .5rem;
+    }
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    input {
+        width: 100%;
+        background-color: #E7E7E7;
+        padding: 12px;
+    }
+    nav {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid $brand-color;
+        // height: 0;
+    }
+    .search {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        img {
+            position: absolute;
+            right: 8px;
+            top: 25%;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style:none;
+        li {
+            background-color: $brand-color;
+            border-top: 1px solid $text-color-dark;
+        }
+        a {
+            padding: 0;
+            display: block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $text-color-light;
+            padding: 12px;
+            font-weight: $body-font-weight;
+            text-align: center;
+            &:hover {
+                color: $brand-color;
+                background-color: $text-color-light;
+            }
+        }
+    }
+    .icons{
+        padding: 12px;
+        svg {
+            height: 30px;
+            width: 30px;
+            fill: $brand-color;
+            margin: 0 8px;
+        }
+    }
+}
