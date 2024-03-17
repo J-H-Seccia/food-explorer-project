@@ -491,28 +491,53 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0;
 }
-header picture {
+header #logo {
   padding-left: 0.5rem;
+  max-width: 357px;
+}
+@media (min-width: 37.5em) {
+  header #logo {
+    width: 100%;
+  }
+}
+@media (min-width: 43.75em) {
+  header #logo {
+    width: 80%;
+    max-width: 100%;
+  }
 }
 header button {
   background: none;
   border: none;
   outline: none;
   box-shadow: none;
+  cursor: pointer;
 }
 header input {
   width: 100%;
   background-color: #E7E7E7;
   padding: 12px;
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
 }
 header nav {
   display: block;
   width: 100%;
+  height: 0;
+  visibility: hidden;
   overflow: hidden;
   text-align: center;
   border: 1px solid #0C6599;
+}
+header nav.show {
+  transition: height 0.3s ease;
+  visibility: visible;
+  height: 365px;
+}
+header nav.activated {
+  transition: height 0.3s ease, visibility 0.3s;
 }
 header .search {
   position: relative;
@@ -555,6 +580,64 @@ header .icons svg {
   width: 30px;
   fill: #0C6599;
   margin: 0 8px;
+}
+@media (min-width: 31.25em) {
+  header {
+    padding: 1rem 1rem 0 1rem;
+  }
+  header button {
+    display: none;
+  }
+  header nav {
+    display: block;
+    visibility: visible;
+    height: auto;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0C6599;
+  }
+  header nav a {
+    font-size: 1rem;
+  }
+  header nav li {
+    border-top: none;
+  }
+  header input {
+    height: 2.5rem;
+    padding-right: 1rem;
+  }
+  header .search {
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-width: 15rem;
+  }
+  header #logo {
+    padding: 0.5rem 2rem 1rem 0.5rem;
+  }
+  header .icons {
+    display: none;
+  }
+}
+@media (min-width: 41.875em) {
+  header ul a {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 43.75em) {
+  header .icons {
+    display: flex;
+    width: 10rem;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
+  header .search {
+    right: 10rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

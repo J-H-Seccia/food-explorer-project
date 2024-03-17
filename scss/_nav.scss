@@ -5,28 +5,49 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $text-color-light;
-    padding: .5rem 0;
-    picture {
+    padding: .5rem 0 0;
+
+    #logo {
         padding-left: .5rem;
+        max-width: 357px;
+        @media (min-width: 37.5em) {
+            width: 100%; 
+        }
+        @media (min-width: 43.75em) {
+            width: 80%;
+            max-width: 100%;
+        }
     }
     button {
         background: none;
         border: none;
         outline: none;
         box-shadow: none;
+        cursor: pointer;
     }
     input {
         width: 100%;
         background-color: #E7E7E7;
         padding: 12px;
+        border: 1px solid #E7E7E7;
+        border-radius: 8px;
     }
     nav {
         display: block;
         width: 100%;
+        height: 0;
+        visibility: hidden;
         overflow: hidden;
         text-align: center;
         border: 1px solid $brand-color;
-        // height: 0;
+        &.show {
+            transition: height 0.3s ease;
+            visibility: visible;
+            height: 365px;
+        }
+        &.activated {
+            transition: height 0.3s ease, visibility 0.3s;
+        }
     }
     .search {
         position: relative;
@@ -68,6 +89,62 @@ header {
             width: 30px;
             fill: $brand-color;
             margin: 0 8px;
+        }
+    }
+    @media (min-width: $tablet-small) {
+        padding: 1rem 1rem 0 1rem;
+        button {
+            display: none;
+        }
+        nav {
+            display: block;
+            visibility: visible;
+            height: auto;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                background-color: $brand-color;
+            }
+            a {
+                font-size: 1rem;
+            }
+            li {
+                border-top: none;
+            }
+        }
+        input {
+            height: 2.5rem;
+            padding-right: 1rem;
+        }
+        .search {
+            width: 30%;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            max-width: 15rem;
+        }
+        #logo {
+            padding: .5rem 2rem 1rem .5rem;
+        }
+        .icons {
+            display: none;
+        }
+    }
+    @media (min-width: $tablet-large) {
+        ul a {
+            font-size: 1.5rem;
+        }
+    }
+    @media (min-width: 43.75em) {
+        .icons {
+            display: flex;
+            width: 10rem;
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+        .search {
+            right: 10rem;
         }
     }
 }
