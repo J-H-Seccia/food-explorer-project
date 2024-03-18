@@ -455,7 +455,7 @@ nav {
   padding: 0.5rem;
   max-width: 20rem;
 }
-@media (min-width: 48em) {
+@media (min-width: 31.25em) {
   .sidebar ul {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 34rem;
@@ -518,9 +518,9 @@ header .menu {
 header input {
   width: 100%;
   background-color: #E7E7E7;
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid #E7E7E7;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 header .search {
   position: relative;
@@ -529,7 +529,7 @@ header .search {
 }
 header .search img {
   position: absolute;
-  right: 8px;
+  right: 0.5rem;
   top: 25%;
 }
 header nav {
@@ -564,7 +564,7 @@ header ul a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #ffffff;
-  padding: 12px;
+  padding: 0.75rem;
   font-weight: 300;
   text-align: center;
 }
@@ -574,13 +574,13 @@ header ul a:hover {
   transition: 0.3s;
 }
 header .icons {
-  padding: 12px;
+  padding: 0.75rem;
 }
 header .icons svg {
-  height: 30px;
-  width: 30px;
+  height: 1.875rem;
+  width: 1.875rem;
   fill: #0C6599;
-  margin: 0 8px;
+  margin: 0 0.5rem;
   cursor: pointer;
 }
 @media (min-width: 31.25em) {
@@ -614,8 +614,8 @@ header .icons svg {
   header .search {
     width: 30%;
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 1.25rem;
+    right: 0.9375rem;
     max-width: 15rem;
   }
   header #logo {
@@ -636,8 +636,8 @@ header .icons svg {
     display: flex;
     width: 10rem;
     position: absolute;
-    top: 12px;
-    right: 10px;
+    top: 0.75rem;
+    right: 0.625rem;
   }
   header .search {
     right: 10rem;

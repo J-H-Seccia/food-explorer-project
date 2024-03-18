@@ -32,9 +32,9 @@ header {
     input {
         width: 100%;
         background-color: $bg-grey;
-        padding: 12px;
+        padding: .75rem;
         border: 1px solid $bg-grey;
-        border-radius: 8px;
+        border-radius: .5rem;
         
     }
     .search {
@@ -43,7 +43,7 @@ header {
         width: 100%;
         img {
             position: absolute;
-            right: 8px;
+            right: .5rem;
             top: 25%;
         }
     }
@@ -80,7 +80,7 @@ header {
             text-decoration: none;
             font-size: 1.5rem;
             color: $text-color-light;
-            padding: 12px;
+            padding: .75rem;
             font-weight: $body-font-weight;
             text-align: center;
             &:hover {
@@ -92,12 +92,12 @@ header {
     }
 
     .icons{
-        padding: 12px;
+        padding: .75rem;
         svg {
-            height: 30px;
-            width: 30px;
+            height: 1.875rem;
+            width: 1.875rem;
             fill: $brand-color;
-            margin: 0 8px;
+            margin: 0 .5rem;
             cursor: pointer;
         }
     }
@@ -131,8 +131,8 @@ header {
         .search {
             width: 30%;
             position: absolute;
-            top: 20px;
-            right: 15px;
+            top: 1.25rem;
+            right: .9375rem;
             max-width: 15rem;
         }
         #logo {
@@ -155,8 +155,8 @@ header {
             display: flex;
             width: 10rem;
             position: absolute;
-            top: 12px;
-            right: 10px;
+            top: .75rem;
+            right: .625rem;
         }
         .search {
             right: 10rem;

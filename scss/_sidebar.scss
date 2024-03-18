@@ -44,7 +44,7 @@
         margin: 0;
         padding: .5rem;
         max-width: 20rem;
-        @media (min-width: 48em) {
+        @media (min-width: $tablet-small) {
             grid-template-columns: 1fr 1fr 1fr;
             max-width: 34rem;
         }
