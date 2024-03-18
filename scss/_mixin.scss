@@ -1,0 +1,5 @@
+@use 'variables' as *;
+
+@mixin hover-transition {
+    transition: 0.3s;
+}
