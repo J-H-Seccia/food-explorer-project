@@ -64,6 +64,9 @@ header {
         &.activated {
             transition: height 0.3s ease, visibility 0.3s;
         }
+        .nav-side-bar {
+            background-color: $brand-color;
+        }
     }
 
     ul {
