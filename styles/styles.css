@@ -577,11 +577,18 @@ header .icons {
   padding: 0.75rem;
 }
 header .icons svg {
+  position: relative;
   height: 1.875rem;
   width: 1.875rem;
   fill: #0C6599;
   margin: 0 0.5rem;
   cursor: pointer;
+}
+@media (max-width: 30.3125em) {
+  header .icons svg:hover path {
+    transition: 0.5s;
+    transform: translateY(-100%);
+  }
 }
 @media (min-width: 31.25em) {
   header {
