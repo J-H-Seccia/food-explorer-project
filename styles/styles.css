@@ -658,17 +658,29 @@ header .icons svg {
     width: 22rem;
   }
   header ul {
-    width: 75%;
+    width: 100%;
+  }
+  header ul a {
+    line-height: 1.3rem;
   }
   header input {
     border-radius: 0;
-    height: 2.85rem;
+    height: auto;
   }
   header .search {
-    top: 4.9rem;
-    right: 1rem;
-    width: 25%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-shrink: 0;
+    width: 30%;
     max-width: 100%;
+    order: 2;
+  }
+  header .search img {
+    position: absolute;
   }
   header svg:hover {
     fill: #E7E7E7;
