@@ -2,7 +2,7 @@
 
 .sidebar {
         margin: .5rem;
-        @media (min-width: 50em) {
+        @media (min-width: $desktop) {
             width: 15rem;
         }
     h2 {
@@ -48,7 +48,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             max-width: 34rem;
         }
-        @media (min-width: 50em) {
+        @media (min-width: $desktop) {
             display: inline-block;
         }
     }

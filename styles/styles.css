@@ -383,7 +383,8 @@ nav {
   .top-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    max-height: 300px;
   }
   .top-images #mussels {
     grid-column-start: 1;
@@ -414,7 +415,7 @@ nav {
 .sidebar {
   margin: 0.5rem;
 }
-@media (min-width: 50em) {
+@media (min-width: 48.125em) {
   .sidebar {
     width: 15rem;
   }
@@ -461,7 +462,7 @@ nav {
     max-width: 34rem;
   }
 }
-@media (min-width: 50em) {
+@media (min-width: 48.125em) {
   .sidebar ul {
     display: inline-block;
   }
@@ -761,6 +762,19 @@ header .icons i.grey {
   }
   .blog-cards .blog h2 {
     font-weight: 700;
+  }
+}
+@media (min-width: 48.125em) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+  .content-wrapper .top-images {
+    grid-column: 1/6;
+  }
+  .content-wrapper .blog-cards, .content-wrapper .older-posts-button {
+    grid-column: 1/6;
   }
 }
 

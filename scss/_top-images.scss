@@ -4,7 +4,8 @@
     @media(min-width: 41.875em) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto;
+        max-height: 300px;
         #mussels {
             grid-column-start: 1;
             grid-column-end: 3;
