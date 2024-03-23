@@ -384,7 +384,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    max-height: 300px;
   }
   .top-images #mussels {
     grid-column-start: 1;
@@ -410,6 +409,11 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
   margin: 0;
+}
+@media (min-width: 48.125em) {
+  .top-images {
+    max-height: 300px;
+  }
 }
 
 .sidebar {
@@ -444,6 +448,9 @@ nav {
 }
 .sidebar #breakfast, .sidebar #steak {
   background-color: #E7E7E7;
+}
+.sidebar .section-cuisines {
+  margin-top: 0.5rem;
 }
 .sidebar .cuisines-wrapper {
   background-color: #ffffff;
@@ -659,6 +666,9 @@ header .icons i.grey {
     top: 0.75rem;
     right: 0.5rem;
   }
+  header .icons i:hover {
+    color: #E7E7E7;
+  }
   header .search {
     right: 10rem;
   }
@@ -759,9 +769,6 @@ header .icons i.grey {
 @media (min-width: 41.875em) {
   .blog-cards .blog {
     padding: 1rem;
-  }
-  .blog-cards .blog h2 {
-    font-weight: 700;
   }
 }
 @media (min-width: 48.125em) {
