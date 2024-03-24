@@ -486,7 +486,7 @@ body {
 }
 
 @media (min-width: 67.5rem) {
-  body {
+  .content-wrapper, header {
     width: 67.5rem;
     margin: 0 auto;
   }
@@ -497,6 +497,11 @@ footer {
   padding: 0.1rem;
   color: #ffffff;
   text-align: center;
+}
+
+.header {
+  max-width: 100%;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 63%, #005991 63%, #005991 100%);
 }
 
 header {
@@ -609,8 +614,7 @@ header .icons i.grey {
 }
 @media (min-width: 31.25em) {
   header {
-    padding: 1rem 1rem 0 1rem;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 63%, #005991 63%, #005991 100%);
+    padding: 1rem 0 0 0;
   }
   header button {
     display: none;

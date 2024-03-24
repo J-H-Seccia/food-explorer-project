@@ -1,6 +1,15 @@
 @use 'variables' as *;
 @use 'mixin' as *;
-
+.header {
+    max-width: 100%;
+    background: linear-gradient(
+        to bottom,
+        $text-color-light 0%,
+        $text-color-light 63%,
+        $brand-color-dark 63%,
+        $brand-color-dark 100%   
+    );
+}
 header {
     display: flex;
     flex-wrap: wrap;
@@ -113,14 +122,7 @@ header {
     }
 
     @media (min-width: $tablet-small) {
-        padding: 1rem 1rem 0 1rem;
-        background: linear-gradient(
-            to bottom,
-            $text-color-light 0%,
-            $text-color-light 63%,
-            $brand-color-dark 63%,
-            $brand-color-dark 100%   
-        );  
+        padding: 1rem 0 0 0;  
         button {
             display: none;
         }
