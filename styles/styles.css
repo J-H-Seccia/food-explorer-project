@@ -707,6 +707,11 @@ header .icons i.grey {
     position: absolute;
   }
 }
+@media (min-width: 67.5rem) {
+  header {
+    margin: 0 auto;
+  }
+}
 
 .blog-cards .blog {
   position: relative;
