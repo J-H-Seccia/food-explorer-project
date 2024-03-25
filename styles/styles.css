@@ -392,7 +392,7 @@ nav {
 }
 .top-images .top-card {
   position: relative;
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 .top-images .top-card img {
   width: 100%;
@@ -458,7 +458,7 @@ nav {
 }
 .sidebar ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   margin: 0;
   padding: 0.5rem;
   max-width: 20rem;
@@ -472,6 +472,9 @@ nav {
 @media (min-width: 48.125em) {
   .sidebar ul {
     display: inline-block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 15rem;
   }
 }
 .sidebar li {
@@ -708,11 +711,15 @@ header .icons i.grey {
   }
 }
 
+.blog-cards {
+  margin-top: 2.5rem;
+}
 .blog-cards .blog {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 0.4rem;
+  margin-bottom: 0.75rem;
   background-color: #ffffff;
 }
 .blog-cards .blog img {
@@ -720,7 +727,7 @@ header .icons i.grey {
   max-height: 250px;
   object-fit: cover;
   padding: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 .blog-cards .blog h2 {
   text-transform: uppercase;
