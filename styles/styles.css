@@ -392,7 +392,7 @@ nav {
 }
 .top-images .top-card {
   position: relative;
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 .top-images .top-card img {
   width: 100%;
@@ -472,6 +472,9 @@ nav {
 @media (min-width: 48.125em) {
   .sidebar ul {
     display: inline-block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 15rem;
   }
 }
 .sidebar li {
@@ -717,7 +720,8 @@ header .icons i.grey {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 0.4rem;
+  margin-bottom: 0.75rem;
   background-color: #ffffff;
 }
 .blog-cards .blog img {
@@ -725,7 +729,7 @@ header .icons i.grey {
   max-height: 250px;
   object-fit: cover;
   padding: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 .blog-cards .blog h2 {
   text-transform: uppercase;
@@ -778,6 +782,11 @@ header .icons i.grey {
 @media (min-width: 41.875em) {
   .blog-cards .blog {
     padding: 1rem;
+  }
+}
+@media (min-width: 48.125em) {
+  .blog-cards {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 48.125em) {
