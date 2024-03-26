@@ -392,7 +392,7 @@ nav {
 }
 .top-images .top-card {
   position: relative;
-  margin: 0.25rem;
+  margin: 0.4rem;
 }
 .top-images .top-card img {
   width: 100%;
@@ -409,11 +409,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
   margin: 0;
-}
-@media (min-width: 48.125em) {
-  .top-images {
-    max-height: 300px;
-  }
 }
 
 .sidebar {
@@ -595,6 +590,24 @@ header ul a:hover {
   background-color: #ffffff;
   transition: 0.3s;
 }
+@keyframes regIcon {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+}
+@keyframes greyIcon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+}
 header .icons {
   padding: 0.75rem;
 }
@@ -604,15 +617,19 @@ header .icons i {
   color: #0C6599;
   margin: 0 0.5rem;
   cursor: pointer;
+  opacity: 1;
 }
 header .icons i.grey {
+  display: none;
   opacity: 0;
   position: absolute;
+  left: -45px;
+  top: 100px;
 }
 @media (max-width: 30.3125em) {
   header .icons i:hover {
-    transition: 0.5s;
-    transform: translateY(-100%);
+    animation-name: regIcon;
+    animation-duration: 0.5s;
   }
 }
 @media (min-width: 31.25em) {
@@ -717,7 +734,6 @@ header .icons i.grey {
 }
 
 .blog-cards .blog {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0.4rem;
@@ -726,10 +742,10 @@ header .icons i.grey {
 }
 .blog-cards .blog img {
   width: 100%;
-  max-height: 250px;
   object-fit: cover;
   padding: 0.5rem;
   margin-top: 1.25rem;
+  margin-bottom: 1rem;
 }
 .blog-cards .blog h2 {
   text-transform: uppercase;
@@ -737,11 +753,12 @@ header .icons i.grey {
   font-size: 2rem;
   width: 100%;
   color: #0C6599;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
   margin: 0;
 }
 .blog-cards .blog p {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   margin: 0;
   font-weight: 600;
 }
@@ -776,17 +793,12 @@ header .icons i.grey {
     padding: 1rem;
   }
   .blog-cards .blog h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 41.875em) {
   .blog-cards .blog {
     padding: 1rem;
-  }
-}
-@media (min-width: 48.125em) {
-  .blog-cards {
-    margin-top: 2rem;
   }
 }
 @media (min-width: 48.125em) {
