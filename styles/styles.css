@@ -458,7 +458,7 @@ nav {
 }
 .sidebar ul {
   display: grid;
-  grid-template-columns: 0.6fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0.5rem;
   max-width: 20rem;
@@ -711,9 +711,6 @@ header .icons i.grey {
   }
 }
 
-.blog-cards {
-  margin-top: 2.5rem;
-}
 .blog-cards .blog {
   position: relative;
   display: flex;
@@ -780,6 +777,11 @@ header .icons i.grey {
 @media (min-width: 41.875em) {
   .blog-cards .blog {
     padding: 1rem;
+  }
+}
+@media (min-width: 48.125em) {
+  .blog-cards {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 48.125em) {

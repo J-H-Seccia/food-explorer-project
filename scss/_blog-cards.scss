@@ -3,7 +3,6 @@
 
 
 .blog-cards {
-    margin-top: 2.5rem;
     
 
     .blog {
@@ -86,5 +85,11 @@
         .blog {
             padding: 1rem;
         }
+    }
+}
+
+@media (min-width: $desktop) {
+    .blog-cards {
+        margin-top: 2rem;
     }
 }
