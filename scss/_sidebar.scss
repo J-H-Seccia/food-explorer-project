@@ -56,7 +56,6 @@
             max-width: 34rem;
         }
         @media (min-width: $desktop) {
-            //Keep Sidebar to the right, and eliminate gap left under top images
             display: inline-block;
             position: absolute;
             background-color: $text-color-light;
