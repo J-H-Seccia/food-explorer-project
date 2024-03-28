@@ -83,6 +83,9 @@ header {
             background-color: $brand-color;
             border-top: 1px solid $text-color-dark;
             width: 100%;
+            &.search {
+                background-color: transparent;
+            }
         }
         a {
             display: block;

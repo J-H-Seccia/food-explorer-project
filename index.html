@@ -27,17 +27,18 @@
             sizes="(max-width: 330px) 100vw, 
             (min-width: 331px) and (max-width: 499px) calc(90vw + 84px),
             (min-width: 500px) calc(70vw + 84px), 
-            (min-width: 700px) calc(50vw + 84px)">
+            (min-width: 700px) calc(50vw + 84px)"
+            alt="Site Logo">
         </a>
         <button class="menu" id="hamburger-menu">
             <img src="images/menu.png" alt="Hamburger Menu">
         </button>
         <nav id="navigation">
             <ul>
-                <div class="search">
+                <li class="search">
                     <input type="text" placeholder="Search">
                     <img src="images/search.png" alt="Search Icon"> 
-                </div>
+                </li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reviews</a></li>
@@ -56,7 +57,7 @@
 
     <main>
         <div class="content-wrapper">
-        <section class="top-images">
+        <div class="top-images">
             
             <article id="mussels" class="top-card">
                 <picture>
@@ -76,7 +77,7 @@
                 <img src="images/pancake.jpg" alt="Salad">
                 <h2>Sit Amet Consectetur</h2>
             </article>
-        </section>
+        </div>
 
     <aside class="sidebar">
 
@@ -84,25 +85,25 @@
             <h2>Latest Recipes</h2>
             <div class="recipes-wrapper">
 
-                <article class="recipe">
+                <div class="recipe">
                     <img src="images/lamb-tb.jpg" alt="Lamb Meal">
                     <p>Met Consec Tetur Elit</p>
-                </article>
+                </div>
 
-                <article id="breakfast" class="recipe">
+                <div id="breakfast" class="recipe">
                     <img src="images/breakfast-tb.jpg" alt="Breakfast Meal">
                     <p>Archi Teco Dolores</p>
-                </article>
+                </div>
 
-                <article class="recipe">
+                <div class="recipe">
                     <img src="images/calamari-tb.jpg" alt="Calamari">
                     <p>Mexpe Dita Ciatis</p>
-                </article>
+                </div>
 
-                <article id="steak" class="recipe">
+                <div id="steak" class="recipe">
                     <img src="images/steak-tb.jpg" alt="Steak">
                     <p>Fugiat Eaque Aore</p>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -133,27 +134,24 @@
         </section>
     </aside>
 
-        <section class="blog-cards">
-            <div class="pasta-wrapper">
+        <div class="blog-cards">
             <article class="blog">
                 <h2>Lorem Ipsum Dolor Sit Amet</h2>
                 <p>Posted by Mike Lee on Sunday, August 25, 2013</p>
                 <img src="images/pasta.jpg" alt="Pasta Dish">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt isi eius aperiam sint.</p>
-                <a class="read-more-link"href="#">Read More...</a>
+                <a class="read-more-link" href="#">Read More...</a>
             </article>
-            </div>
-            <div class="ramen-wrapper">
+
             <article class="blog">
                 <h2>Vel, Eaque Quisquam Sit Amet</h2>
                 <p>Posted by Mike Lee on Monday, July 29, 2013</p>
                 <img src="images/ramen.jpg" alt="Bowl of Ramen">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt isi eius aperiam sint.</p>
-                <a class="read-more-link"href="#">Read More...</a>
+                <a class="read-more-link" href="#">Read More...</a>
             </article>
-            </div>
 
-        </section>
+        </div>
 
         <div class="older-posts-button">
             <a href="#">

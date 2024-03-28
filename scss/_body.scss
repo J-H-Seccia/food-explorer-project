@@ -5,12 +5,6 @@ body {
     width: 100%;
 }
 
-// @media (min-width: $desktop-1080) {
-//     body {
-//         width: $desktop-1080;
-//         margin: 0 auto;
-//     }
-// }
 @media (min-width: $desktop-1080) {
     .content-wrapper, header {
         width: $desktop-1080;
