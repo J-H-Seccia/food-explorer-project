@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+.sidebar {
+        margin: .5rem;
+        @media (min-width: $desktop) {
+            width: 15rem;
+            
+        }
+
+
+    h2 {
+        background-color: $brand-color;
+        color: $text-color-light;
+        padding: .75rem;
+        text-transform: uppercase;
+        margin: 0 auto;
+        
+    }
+    img {
+        border: 2px solid $brand-color;
+    }
+    .recipe {
+        margin: 0 auto;
+        padding: .5rem;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        background-color: $text-color-light;
+        
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+    #breakfast, #steak {
+        background-color: #E7E7E7;
+    }
+   
+    .section-cuisines {
+        margin-top: .5rem;
+    }
+
+    .cuisines-wrapper {
+        background-color: $text-color-light;
+        width: 100%;
+    }
+ 
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: .5rem;
+        max-width: 20rem;
+        @media (min-width: $tablet-small) {
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 34rem;
+        }
+        @media (min-width: $desktop) {
+            display: inline-block;
+            position: absolute;
+            background-color: $text-color-light;
+             width: 15rem;
+
+      
+        }
+    }
+    li {
+        list-style: none;
+        line-height: 2rem;
+    }
+}

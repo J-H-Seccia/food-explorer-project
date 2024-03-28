@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+.top-images {
+    @media(min-width: 41.875em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        #mussels {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    .top-card {
+        position: relative;
+        margin: .4rem;
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        h2 {
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: $text-color-light;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: .5rem;
+            margin: 0;    
+                
+        }
+    }
+
+}
